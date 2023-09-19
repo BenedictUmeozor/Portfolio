@@ -1,0 +1,57 @@
+/* Light Theme */
+:root.light {
+  --body-color: #ffffff;
+  --text-color: #151515;
+  --btn-color: #eeeeee;
+  --btn-bg-color: #ffffff;
+  --scrollbar-color: #f7f7f7;
+  --scrollbar-track-color: #eeeeee;
+  --paragraph-color: #777777;
+  --highlight-color: #000000;
+  --inactive-color: #777777;
+  --active-color: #151515;
+  --card-color: #f7f7f7;
+  --cardHeader-color: #151515;
+  --workHeading-color: #777778;
+  --cardStack-color: #bebebe;
+  --cardDescription-color: #949495;
+  --resumeCard-color: #f7f7f7;
+  --resumeTitle-color: #151515;
+  --resumeDivider-color: #151515;
+  --resumeUnderline-color: #77777859;
+  --formInput-color: #151515;
+  --formInputBg-color: #f7f7f7;
+  --formButtonBg-color: #151515;
+  --formButtonTxt-color: #ffffff;
+  --btn-border-color: #bebebe;
+  --success-color: #198754;
+}
+
+/* Dark Theme */
+:root.dark {
+  --body-color: #151515;
+  --text-color: #ffffff;
+  --btn-color: #1b1b1d;
+  --btn-bg-color: #1b1b1d;
+  --scrollbar-color: #16161a;
+  --scrollbar-track-color: #101011;
+  --paragraph-color: #949495;
+  --highlight-color: #ffffff;
+  --inactive-color: #949495;
+  --active-color: #ffffff;
+  --card-color: #1b1b1d;
+  --cardHeader-color: #ffffff;
+  --workHeading-color: #777778;
+  --cardStack-color: #bebebe;
+  --cardDescription-color: #949495;
+  --resumeCard-color: #1b1b1d;
+  --resumeTitle-color: #cfcfcf;
+  --resumeDivider-color: #e2e2e2;
+  --resumeUnderline-color: #77777859;
+  --formInput-color: #d3d3d3;
+  --formInputBg-color: #16161a;
+  --formButtonBg-color: #16161a;
+  --formButtonTxt-color: #ffffff;
+  --btn-border-color: #a6a6a7;
+  --success-color: #198754;
+}
