@@ -1,0 +1,65 @@
+.desktop {
+  height: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .logo {
+    display: flex;
+    align-items: center;
+    column-gap: 0.25rem;
+    color: var(--highlight-color);
+
+    .icon {
+      width: 1.5rem;
+    }
+
+    &:hover {
+      color: var(--paragraph-color);
+    }
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+    column-gap: 1.25rem;
+
+    ul {
+      list-style-type: none;
+      display: flex;
+      align-items: center;
+      column-gap: 1rem;
+
+      a {
+        display: inline-block;
+        color: var(--paragraph-color);
+        font-size: 0.9rem;
+        text-transform: capitalize;
+
+        &:hover {
+          color: var(--highlight-color);
+          transform: translateY(-10%);
+        }
+
+        &.active {
+          color: var(--highlight-color);
+        }
+      }
+    }
+
+    .themeToggler {
+      height: 2rem;
+      width: 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      background-color: var(--btn-color);
+      cursor: pointer;
+
+      .icon {
+        width: 1.25rem;
+      }
+    }
+  }
+}

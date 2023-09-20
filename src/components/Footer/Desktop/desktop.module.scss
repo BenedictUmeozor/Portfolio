@@ -1,0 +1,25 @@
+.desktop {
+  display: flex;
+  align-items: center;
+  column-gap: 1.75rem;
+
+  a {
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+    font-size: 0.9rem;
+    color: var(--active-color);
+
+    svg {
+      color: var(--active-color);
+      fill: var(--active-color);
+      width: 1rem;
+    }
+
+    span {
+      svg {
+        fill: none;
+      }
+    }
+  }
+}

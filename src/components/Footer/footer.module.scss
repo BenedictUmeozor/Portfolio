@@ -1,0 +1,13 @@
+.footer {
+  height: 4.5rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0.25rem 0 0.5rem;
+
+  .copyright {
+    font-size: 0.85rem;
+    color: var(--inactive-color);
+  }
+}
