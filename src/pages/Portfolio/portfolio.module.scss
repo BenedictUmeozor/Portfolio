@@ -1,0 +1,23 @@
+.portfolio {
+  padding: 0 0 1.5rem;
+
+  h3 {
+    color: var(--workHeading-color);
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
+  }
+
+  .projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+
+    @media only screen and (max-width: 900px) {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @media only screen and (max-width: 768px) {
+      grid-template-columns: 1fr;
+    }
+  }
+}
