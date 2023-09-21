@@ -5,54 +5,57 @@
   box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.1);
   cursor: default;
 
-  .title {
-    font-size: 1.5rem;
-    font-weight: 500;
+  @media only screen and (max-width: 768px) {
+    width: 90%;
+    margin: auto;
   }
 
-  .tools {
-    margin: 1rem 0;
+  .header {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 1rem;
 
-
-    div {
-      font-size: 0.85rem;
-      color: var(--paragraph-color);
-      text-transform: capitalize;
-      background-color: var(--card-tool-color);
-      padding: 0.25rem;
-      border-radius: 0.15rem;
-    }
-  }
-
-  p {
-    font-size: 0.9rem;
-    color: var(--cardDescription-color);
-  }
-
-  .code {
-    margin: 1.5rem 0;
-    display: flex;
-    align-items: center;
-    column-gap: 1rem;
-    font-size: 0.9rem;
-
-    a {
+    .links {
       display: flex;
       align-items: center;
       column-gap: 0.5rem;
+    }
 
-      span {
-        color: var(--cardStack-color);
-      }
+    svg {
+      width: 1.25rem;
+      color: var(--cardStack-color);
 
-      svg {
-        width: 1rem;
-        color: var(--workHeading-color);
+      &.code {
+        width: 2rem;
       }
+    }
+  }
+
+  .body {
+    margin-bottom: 1rem;
+
+    h4 {
+      color: var(--cardHeader-color);
+      margin-bottom: 0.5rem;
+      font-size: 1.25rem;
+      font-weight: 500;
+    }
+
+    p {
+      font-size: 0.9rem;
+      color: var(--cardDescription-color);
+    }
+  }
+
+  .footer {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+
+    span {
+      font-size: 0.85rem;
+      color: var(--workHeading-color);
     }
   }
 }
