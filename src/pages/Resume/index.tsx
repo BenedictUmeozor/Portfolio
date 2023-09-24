@@ -46,8 +46,14 @@ export default function Resume() {
           <div>
             <h6>Libraries</h6>
             <p>
-              React.js, Firebase, Redux Toolkit, Framer-motion, Axios,
-              React-router
+              React.js, Redux Toolkit, Framer-motion, Axios,
+              React-router, Node.js, Express, Mongoose.
+            </p>
+          </div>
+          <div>
+            <h6>Databases</h6>
+            <p>
+              MySQL, Mongodb, Firebase
             </p>
           </div>
           <div>
@@ -61,7 +67,7 @@ export default function Resume() {
           <div>
             <h6>Projects</h6>
             <p>
-              Links to my peojects can be found{" "}
+              Links to my projects can be found{" "}
               <Link to="/portfolio">here</Link>
             </p>
           </div>
