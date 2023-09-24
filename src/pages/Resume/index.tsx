@@ -55,6 +55,10 @@ export default function Resume() {
             <p>Git, SAAS, Best Practices, SEO</p>
           </div>
           <div>
+            <h6>Soft skills</h6>
+            <p>Communication, Team work, Problem solving, Creative thinking</p>
+          </div>
+          <div>
             <h6>Projects</h6>
             <p>
               Links to my peojects can be found{" "}
