@@ -1,5 +1,5 @@
 import styles from "./home.module.scss";
-import avatar from "../../assets/avatar2.jpeg";
+import avatar from "../../assets/funavatar.jpeg";
 import { MessageSquare } from "react-feather";
 import { Helmet } from "react-helmet";
 import { motion } from "framer-motion";
