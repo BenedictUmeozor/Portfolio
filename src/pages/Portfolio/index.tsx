@@ -1,6 +1,7 @@
 import Project from "../../components/Project";
 import Helmet from "react-helmet";
 import styles from "./portfolio.module.scss";
+import { projects } from "../../data";
 
 export default function Portfolio() {
   return (
@@ -11,11 +12,9 @@ export default function Portfolio() {
       <div className={styles.portfolio}>
         <h3>MY PROJECTS</h3>
         <div className={styles.projects}>
-          <Project />
-          <Project />
-          <Project />
-          <Project />
-          <Project />
+          {projects.map((project) => (
+            <Project key={project.id} project={project} />
+          ))}
         </div>
       </div>
     </>

@@ -1,7 +1,12 @@
 import { Code, ExternalLink, GitHub } from "react-feather";
 import styles from "./project.module.scss";
+import { Project as ProjectInterface } from "../../data";
 
-export default function Project() {
+type PropTypes = {
+  project: ProjectInterface;
+};
+
+export default function Project({ project }: PropTypes) {
   return (
     <>
       <div className={styles.card}>
@@ -10,27 +15,32 @@ export default function Project() {
             <Code className={styles.code} />
           </div>
           <div className={styles.links}>
-            <a href="#" target="_blank" rel="noopener noreferrer">
+            <a
+              href={project.codeRepository}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <GitHub />
             </a>
-            <a href="#" target="_blank" rel="noopener noreferrer">
-              <ExternalLink />
-            </a>
+            {project.liveUrl && (
+              <a
+                href={project.liveUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <ExternalLink />
+              </a>
+            )}
           </div>
         </div>
         <div className={styles.body}>
-          <h4>ThoughtForum</h4>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam
-            debitis ratione eius aliquid culpa est, laboriosam praesentium minus
-            quibusdam omnis?
-          </p>
+          <h4>{project.title}</h4>
+          <p>{project.description}</p>
         </div>
         <div className={styles.footer}>
-          <span>React</span>
-          <span>Firebase</span>
-          <span>Node</span>
-          <span>Express</span>
+          {project.tools.map((tool) => (
+            <span key={tool}>{tool}</span>
+          ))}
         </div>
       </div>
     </>

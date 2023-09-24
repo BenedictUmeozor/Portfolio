@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 import { NavLink as NavLinkInterface } from "../../../../helpers/interfaces";
 import { MobileScreen } from "../../../../screens";
 import styles from "./menu.module.scss";
-import { AtSign, Facebook, GitHub, Linkedin, Twitter } from "react-feather";
+import { AtSign, GitHub, Linkedin, Twitter } from "react-feather";
 import { MouseEvent } from "react";
 
 type PropTypes = {
@@ -35,22 +35,35 @@ export default function Menu({ navLinks, closeMenu }: PropTypes) {
           <div className={styles.socialsContainer}>
             <h2>Connect with me</h2>
             <div className={styles.socials}>
-              <a href="#" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://www.twitter.com/dev_benedict"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Twitter />
               </a>
-              <a href="#" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://github.com/BenedictUmeozor"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <GitHub />
               </a>
-              <a href="#" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://www.linkedin.com/in/benedict-umeozor-014b70228/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Linkedin />
               </a>
-              <a href="#" target="_blank" rel="noopener noreferrer">
+              <a
+                href="mailto:benedictumeozor@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <span>
                   <AtSign />
                 </span>
-              </a>
-              <a href="#" target="_blank" rel="noopener noreferrer">
-                <Facebook />
               </a>
             </div>
           </div>
