@@ -1,6 +1,7 @@
 import { Code, ExternalLink, GitHub } from "react-feather";
 import styles from "./project.module.scss";
 import { Project as ProjectInterface } from "../../data";
+import { FadeInWhenVisible } from "../FramerMotion";
 
 type PropTypes = {
   project: ProjectInterface;
@@ -9,7 +10,7 @@ type PropTypes = {
 export default function Project({ project }: PropTypes) {
   return (
     <>
-      <div className={styles.card}>
+      <FadeInWhenVisible className={styles.card} id={project.id}>
         <div className={styles.header}>
           <div>
             <Code className={styles.code} />
@@ -42,7 +43,7 @@ export default function Project({ project }: PropTypes) {
             <span key={tool}>{tool}</span>
           ))}
         </div>
-      </div>
+      </FadeInWhenVisible>
     </>
   );
 }
