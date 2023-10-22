@@ -12,8 +12,8 @@ export default function Portfolio() {
       <div className={styles.portfolio}>
         <h3>MY PROJECTS</h3>
         <div className={styles.projects}>
-          {projects.map((project) => (
-            <Project key={project.id} project={project} />
+          {projects.map((project, index) => (
+            <Project key={project.id} project={project} index={index} />
           ))}
         </div>
       </div>

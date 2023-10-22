@@ -22,25 +22,12 @@ export const FadeInWhenVisible = ({ children, className, id }: PropTypes) => {
     };
   }, []);
 
-  const item = {
-    hidden: {
-      opacity: 0,
-    },
-    visible: {
-      opacity: 1,
-
-      transition: {
-        delay: width < 768 ? 0.5 : id! / 2,
-      },
-    },
-  };
-
   return (
     <motion.div
-      variants={item}
-      initial="hidden"
-      animate={width > 768 ? "visible" : ""}
-      whileInView={width < 768 ? "visible" : ""}
+      initial={{ opacity: 0 }}
+      animate={width > 768 ? { opacity: 1 } : ""}
+      whileInView={width < 768 ? { opacity: 1 } : ""}
+      transition={{ delay: width < 768 ? 0.5 : id! / 2, type: "tween" }}
       viewport={{ once: true }}
       className={className}
     >

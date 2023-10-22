@@ -5,12 +5,13 @@ import { FadeInWhenVisible } from "../FramerMotion";
 
 type PropTypes = {
   project: ProjectInterface;
+  index: number;
 };
 
-export default function Project({ project }: PropTypes) {
+export default function Project({ project, index }: PropTypes) {
   return (
     <>
-      <FadeInWhenVisible className={styles.card} id={project.id}>
+      <FadeInWhenVisible className={styles.card} id={index + 1}>
         <div className={styles.header}>
           <div>
             <Code className={styles.code} />

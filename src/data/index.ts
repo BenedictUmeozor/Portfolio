@@ -1,5 +1,7 @@
+import { v4 as uuidV4 } from "uuid";
+
 export interface Project {
-  id: number;
+  id: string;
   title: string;
   description: string;
   liveUrl: string | null;
@@ -9,7 +11,7 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    id: 1,
+    id: uuidV4(),
     title: "Rest Countries",
     description:
       "Discover the world effortlessly! This web application provides instant, in-depth country insights for curious explorers and global enthusiasts",
@@ -18,8 +20,8 @@ export const projects: Project[] = [
     tools: ["React", "Tailwind CSS", "Framer motion"],
   },
   {
-    id: 2,
-    title: "ThoughtForum (Frontend)",
+    id: uuidV4(),
+    title: "ThoughtForum (Frontend) - version 1",
     description:
       "An interactive Q&A web application that enables users to ask, answer, like questions, and follow others for a rich knowledge-sharing experience",
     liveUrl: "https://thought-forum.vercel.app/",
@@ -35,7 +37,24 @@ export const projects: Project[] = [
     ],
   },
   {
-    id: 3,
+    id: uuidV4(),
+    title: "ThoughtForum (Frontend) - version 2",
+    description:
+      "Enhanced Q&A Web App: An interactive platform for asking, answering, and connecting with like-minded learners and experts.",
+    liveUrl: "https://thoughtforum-v2.vercel.app/",
+    codeRepository: "https://github.com/BenedictUmeozor/thoughtforum-v2",
+    tools: [
+      "React",
+      "TypeScript",
+      "Redux Toolkit",
+      "Socket.io",
+      "Axios",
+      "Material UI",
+      "SAAS",
+    ],
+  },
+  {
+    id: uuidV4(),
     title: "Task manager",
     description:
       "A powerful web application designed to streamline your daily tasks. Create, edit, and delete tasks effortlessly, while organizing them by category for maximum productivity.",
@@ -44,7 +63,7 @@ export const projects: Project[] = [
     tools: ["React", "Tailwind CSS", "Context API", "React Router"],
   },
   {
-    id: 4,
+    id: uuidV4(),
     title: "GetLinked",
     description:
       "A UI challenge by getlinked.ai. The challenge involves designing an intuitive and user-friendly interface, optimizing user interactions, and ensuring a delightful user experience.",
@@ -53,7 +72,7 @@ export const projects: Project[] = [
     tools: ["React", "React Router", "TypeScript", "SAAS"],
   },
   {
-    id: 5,
+    id: uuidV4(),
     title: "Simple Temperature Converter",
     description:
       "A temperature conversion tool that allows you to seamlessly switch between Fahrenheit, Celsius, and Kelvin. Effortlessly convert temperatures with precision and ease. Built as part of an assignment in a bootcamp",
@@ -62,7 +81,7 @@ export const projects: Project[] = [
     tools: ["HTML", "CSS", "JavaScript"],
   },
   {
-    id: 6,
+    id: uuidV4(),
     title: "ThoughtForum (backend)",
     description:
       "The API that powers the interactive Q&A web app, managing user interactions, questions, answers, and notifications for a seamless knowledge-sharing experience.",
@@ -71,12 +90,13 @@ export const projects: Project[] = [
     tools: ["Node.js", "Express", "Mongoose", "Socket.io"],
   },
   {
-    id: 7,
+    id: uuidV4(),
     title: "Benedict Umeozor",
-    description: "My portfolio website showcases my creative journey, featuring a diverse range of projects that reflect my skills, passions, and dedication",
+    description:
+      "My portfolio website showcases my creative journey, featuring a diverse range of projects that reflect my skills, passions, and dedication",
     liveUrl: "https://benedictumeozor.vercel.app/",
     codeRepository: "https://github.com/BenedictUmeozor/Portfolio",
-    tools: ["React", "TypeScript", "SAAS"]
+    tools: ["React", "TypeScript", "SAAS"],
   },
 ];
 
